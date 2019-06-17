@@ -1,18 +1,34 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
 import Home from '../home'
-import About from '../about'
+import Dashboard from '../dashboard'
 
 const App = () => (
-  <div>
+  <div className="subApp__container">
     <header>
-      <Link to="/">Home</Link>
-      <Link to="/about-us">About</Link>
+      <div className="appTitlebar">
+        <h3>AlfanFrontEndTest</h3>
+      </div>
     </header>
 
     <main>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about-us" component={About} />
+      <div className="leftMenu">
+        <div className="menuLinks">
+          <h3>Menu</h3>
+          <div>
+            <Link to="/">Home</Link>
+          </div>
+          <div>
+            <Link to="/dashboard">Dashboard</Link>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="mainDisplay">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/dashboard" component={Dashboard} />
+      </div>
     </main>
   </div>
 )

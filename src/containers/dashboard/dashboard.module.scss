@@ -1,0 +1,105 @@
+.AreaChart {
+    clear: both;
+    width: 100%;
+}
+
+.dashboardContainer {
+    width: 100%;
+}
+
+.chart{
+    display: block;
+    width: 100%;
+}
+
+.dashboardContainer {
+    width: 100%;
+    .dbTitle{
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+    }
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .dboardcard {
+            position: relative;
+            background: #fff;
+            border-radius: 2px; 
+            margin: 15px;
+            min-height: 300px;
+            padding: 15px;
+            box-sizing: border-box;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            .dotsMenu {
+                right: 15px;
+                top: 0px;
+                z-index: 20;
+                position: absolute;
+                width: 10px;
+                cursor: pointer;
+            }
+            .dotsMenu:after {
+                content: '\2807';
+                font-size: 25px;
+            } 
+            .cardText {
+                text-align: center;
+            }
+            .micromenu {
+                width: 93px;
+                position: absolute;
+                right: 8px;
+                background-color: #ffffff;
+                top: 40px;
+                padding: 15px; 
+                z-index: 100;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            }
+            .micromenu div {
+                margin: 15px 0;
+            }
+            .expandLink, .removeLink {
+                cursor: pointer;
+            }
+        }
+          
+        .dboardcard:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    }
+
+}
+
+@media(max-width: 960px) {
+    .dashboardContainer {
+        .cardsContainer {
+            display: block;
+        }
+    }
+}
+
+@media(max-width: 1550px) {
+    .dashboardContainer {
+        .cardsContainer {
+            .dboardcard {
+                max-width: 960px;
+            }
+        }
+    }
+}
+
+@media(min-width: 960px) and (max-width: 1140px) {
+    .dashboardContainer {
+        .cardsContainer {
+            display: block;
+            .dboardcard {
+                max-width: 900px;
+            }
+        }
+    }
+}
+
+  
+

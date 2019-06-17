@@ -1,0 +1,94 @@
+.ColorPicker {
+    width: 100%;
+    padding: 0 20px;
+    color: #ffffff;
+    font-weight: bold;
+    box-sizing: border-box;
+
+    .centralize {
+        width: 100%;
+        max-width: 218px;
+        margin: 0 auto;
+    }
+    
+    .firstPicker{
+        position: relative;
+        width: 50%;
+        float: left;
+        border: solid 1px #ffffff;
+        .titleBox {
+            float: left;
+        }
+    }
+    .secondPicker{
+        position: relative;
+        width: 50%;
+        float: left;
+        border: solid 1px #ffffff;
+        
+        .titleBox {
+            float: left;
+        }
+    }
+
+    .colorsContainer {
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        top: 40px;
+    }
+    .picker {
+        border: solid 1px #656867;
+        width: 39px;
+        margin-top: 4px;
+        height: 17px;
+        display: inline-block;
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .colorList {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .green_col {
+        background-color: #21b22b;
+    }
+    .red_col {
+        background-color: #af1c37;
+    }
+    .yellow_col {
+        background-color: #D7DE09;
+    }
+    .acqua_col {
+        background-color: #09D4DE;
+    }
+    .blue_col {
+        background-color: #2609DE;
+    }
+    .orange_col {
+        background-color: #DE7409;
+    }
+    .black_col {
+        background-color: #110405;
+    }
+}
+
+
+@media(max-width: 960px) {
+    .ColorPicker {
+        .firstPicker, .secondPicker{
+            float: none;
+            width: 100%;
+            position: relative;
+            display: inline-block;
+        }
+    }
+}

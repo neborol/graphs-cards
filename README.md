@@ -1,20 +1,9 @@
-<p align="center"><a href="https://medium.com/@notrab/getting-started-with-create-react-app-redux-react-router-redux-thunk-d6a19259f71f"><img src="https://i.imgur.com/PATsTx2.png" title="View tutorial" alt="React, React Router, Redux and Redux Thunk" width="900"></a></p>
+To start this app, 
 
-* Tutorial: [Getting started with create-react-app, Redux, React Router & Redux Thunk](https://medium.com/@notrab/getting-started-with-create-react-app-redux-react-router-redux-thunk-d6a19259f71f)
-* [Demo](https://create-react-app-redux.now.sh) 🙌
+1) Clone the app, and save it in the directory you would like to run it from.
 
-## Installation
+2) Using the command line tool, navigate to this directory where you put the app, and in there, run yan install, or npm install.
 
-```bash
-git clone https://github.com/notrab/create-react-app-redux.git
-cd create-react-app-redux
-yarn
-```
+3) When all the dependencies have been downloaded, run npm start and that application is going to load.
 
-## Get started
-
-```bash
-yarn start
-```
-
-This boilerplate is built using [create-react-app](https://github.com/facebook/create-react-app) so you will want to read the User Guide for more goodies.
+4) There are just 2 pages, the home page, which is blank, and the dashboard page that has the cards. 
