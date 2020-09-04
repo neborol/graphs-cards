@@ -19,7 +19,7 @@
     "connected-react-router": "4.5.0",
     "highcharts": "^7.1.2",
     "highcharts-react-official": "^2.2.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-redux": "5.1.1",
